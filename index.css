@@ -1,0 +1,44 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin-left: 200px;
+    margin-top: 200px;
+    transition: 1s ease-in-out;
+}
+div:hover{
+    /* transform: rotate(45deg);
+    transform: scale(.5);
+    transform: skew(25deg); */
+    transform: rotate(20deg) scale(.5);
+
+}
+.c1{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin-left: 200px;
+    margin-top: 200px;
+    transition: 1s ease-in-out;
+    animation: anim 1s ease-in-out infinite ;
+}
+.c1:hover{
+    animation-play-state: paused;
+}
+@keyframes anim{
+0%{
+    background-color: aqua;
+    transform: translate(5px);
+}
+50%{
+    background-color: rgb(255, 0, 0);
+    transform: translate(15px);
+}
+100%{
+    background-color: rgb(230, 0, 255);
+    transform: translate(5px);
+}
+}
+span{
+    color: brown;
+}
